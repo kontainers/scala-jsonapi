@@ -4,7 +4,7 @@ name := "scala-jsonapi"
 
 scalaVersion := "2.12.8"
 
-crossScalaVersions := Seq("2.11.12", scalaVersion.value)
+crossScalaVersions := Seq("2.11.12", scalaVersion.value, "2.13.0-M5")
 
 scalacOptions ++= Seq("-feature", "-unchecked", "-deprecation")
 
@@ -12,7 +12,7 @@ libraryDependencies ++= {
 
   Seq(
     "io.spray"          %% "spray-json"     % "1.3.5"         % "provided",
-    "com.typesafe.play" %% "play-json"      % "2.6.13"        % "provided",
+    "com.typesafe.play" %% "play-json"      % "2.7.0-RC2"     % "provided",
     "org.scalatest"     %% "scalatest"      % "3.0.6-SNAP5"   % Test
   )
 }
