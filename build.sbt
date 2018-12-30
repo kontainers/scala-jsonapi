@@ -9,10 +9,14 @@ crossScalaVersions := Seq("2.11.12", scalaVersion.value)
 scalacOptions ++= Seq("-feature", "-unchecked", "-deprecation")
 
 libraryDependencies ++= {
+  val circeVersion    = "0.11.0"
 
   Seq(
     "io.spray"          %% "spray-json"     % "1.3.5"         % "provided",
     "com.typesafe.play" %% "play-json"      % "2.6.13"        % "provided",
+    "io.circe"          %% "circe-core"     % circeVersion    % "provided",
+    "io.circe"          %% "circe-generic"  % circeVersion    % "provided",
+    "io.circe"          %% "circe-parser"   % circeVersion    % "provided",
     "org.scalatest"     %% "scalatest"      % "3.0.6-SNAP5"   % Test
   )
 }
