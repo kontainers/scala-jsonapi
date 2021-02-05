@@ -20,7 +20,7 @@ This is a fork of https://github.com/scala-jsonapi/scala-jsonapi, made with the 
 
 To use scala-jsonapi, first add a library dependency.
 
-    libraryDependencies += "io.kontainers" %% "scala-jsonapi" % "0.8.0"
+    libraryDependencies += "io.kontainers" %% "scala-jsonapi" % "0.9.0"
 
 You also have to provide the used backend (e.g. play-json).
 
