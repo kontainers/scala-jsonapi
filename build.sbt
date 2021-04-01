@@ -2,7 +2,7 @@ organization := "io.kontainers"
 
 name := "scala-jsonapi"
 
-scalaVersion := "2.13.4"
+scalaVersion := "2.13.5"
 
 crossScalaVersions := Seq(scalaVersion.value, "2.12.12")
 
@@ -13,7 +13,7 @@ libraryDependencies ++= {
   Seq(
     "io.spray"          %% "spray-json"     % "1.3.6"     % "provided",
     "com.typesafe.play" %% "play-json"      % "2.9.2"     % "provided",
-    "org.scalatest"     %% "scalatest"      % "3.2.3"     % Test
+    "org.scalatest"     %% "scalatest"      % "3.2.7"     % Test
   )
 }
 
