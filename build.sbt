@@ -20,15 +20,13 @@ libraryDependencies ++= {
 lazy val root = (project in file("."))
   .enablePlugins(ScoverageSbtPlugin)
 
-scalafmtConfig in ThisBuild := Some(file(".scalafmt"))
+ThisBuild / scalafmtConfig := Some(file(".scalafmt"))
 
 coverageMinimum := 80
 
 coverageFailOnMinimum := true
 
 publishMavenStyle := true
-
-Global / useGpg := false
 
 publishTo := {
   val nexus = "https://oss.sonatype.org/"
@@ -38,7 +36,7 @@ publishTo := {
     Some("releases" at nexus + "service/local/staging/deploy/maven2")
 }
 
-publishArtifact in Test := false
+Test / publishArtifact := false
 
 pomIncludeRepository := { _ => false }
 
